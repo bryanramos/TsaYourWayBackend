@@ -3,7 +3,7 @@ using System;
 
 namespace TexasTSA.Services.TsaYourWay.Catalog.Contracts
 {
-    public class Event
+    public class TsaEvent
     {
         [JsonProperty(PropertyName = "active")]
         public string Active { get; set; }
@@ -18,10 +18,7 @@ namespace TexasTSA.Services.TsaYourWay.Catalog.Contracts
         public Boolean Archive { get; set; }
 
         [JsonProperty(PropertyName = "challenge")]
-        public char Challenge { get; set; }
-
-        [JsonProperty(PropertyName = "challengeInstructions")]
-        public string ChallengeInstructions { get; set; }
+        public string Challenge { get; set; }
 
         [JsonProperty(PropertyName = "createdTimestamp")]
         public DateTime CreatedTimestamp { get; set; }
@@ -32,14 +29,20 @@ namespace TexasTSA.Services.TsaYourWay.Catalog.Contracts
         [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
+        [JsonProperty(PropertyName = "details")]
+        public string Details { get; set; }
+
         [JsonProperty(PropertyName = "id")]
         public string Id { get; set; }
 
-        [JsonProperty(PropertyName = "Individual")]
+        [JsonProperty(PropertyName = "individual")]
         public Boolean Individual { get; set; }
 
-        [JsonProperty(PropertyName = "level")]
-        public string Level { get; set; }
+        [JsonProperty(PropertyName = "highschool")]
+        public string HighSchool { get; set; }
+
+        [JsonProperty(PropertyName = "middleschool")]
+        public string MiddleSchool { get; set; }
 
         [JsonProperty(PropertyName = "modifiedTimestamp")]
         public DateTime ModifiedTimestamp { get; set; }
